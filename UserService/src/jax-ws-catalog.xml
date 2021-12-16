@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/UserVerifyService/UserVerify?WSDL" uri="wsdl/localhost_8080/UserVerifyService/UserVerify.wsdl"/>
+    <system systemId="http://localhost:8080/UserVerifyService/UserVerify?xsd=1" uri="wsdl/localhost_8080/UserVerifyService/UserVerify.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/DatabaseService/UserService?WSDL" uri="wsdl/localhost_8080/DatabaseService/UserService.wsdl"/>
+    <system systemId="http://localhost:8080/DatabaseService/UserService?xsd=1" uri="wsdl/localhost_8080/DatabaseService/UserService.xsd_1.xsd"/>
+    <system systemId="http://192.168.83.2:8080/DatabaseService/UserServiceCoop?wsdl" uri="wsdl/192.168.83.2_8080/DatabaseService/UserServiceCoop.wsdl"/>
+    <system systemId="http://192.168.83.2:8080/DatabaseService/UserServiceCoop?xsd=1" uri="wsdl/192.168.83.2_8080/DatabaseService/UserServiceCoop.xsd_1.xsd"/>
+    <system systemId="http://192.168.43.2:8080/DatabaseService/UserServiceCoop?wsdl" uri="wsdl/192.168.43.2_8080/DatabaseService/UserServiceCoop.wsdl"/>
+    <system systemId="http://192.168.43.2:8080/DatabaseService/UserServiceCoop?xsd=1" uri="wsdl/192.168.43.2_8080/DatabaseService/UserServiceCoop.xsd_1.xsd"/>
+</catalog>
