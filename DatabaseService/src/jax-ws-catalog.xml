@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://172.20.10.4:8080//DatabaseService/DatabaseSynchronization?wsdl" uri="wsdl/172.20.10.4_8080/DatabaseService/DatabaseSynchronization.wsdl"/>
+    <system systemId="http://172.20.10.4:8080/DatabaseService/DatabaseSynchronization?xsd=1" uri="wsdl/172.20.10.4_8080/DatabaseService/DatabaseSynchronization.xsd_1.xsd"/>
+    <system systemId="http://172.20.10.4:8080/DatabaseService/DatabaseSynchronizationCoop?wsdl" uri="wsdl/172.20.10.4_8080/DatabaseService/DatabaseSynchronizationCoop.wsdl"/>
+    <system systemId="http://172.20.10.4:8080/DatabaseService/DatabaseSynchronizationCoop?xsd=1" uri="wsdl/172.20.10.4_8080/DatabaseService/DatabaseSynchronizationCoop.xsd_1.xsd"/>
+    <system systemId="http://192.168.43.3:8080/DatabaseService/DatabaseSynchronizationCoop?wsdl" uri="wsdl/192.168.43.3_8080/DatabaseService/DatabaseSynchronizationCoop.wsdl"/>
+    <system systemId="http://192.168.43.3:8080/DatabaseService/DatabaseSynchronizationCoop?xsd=1" uri="wsdl/192.168.43.3_8080/DatabaseService/DatabaseSynchronizationCoop.xsd_1.xsd"/>
+    <system systemId="http://192.168.43.2:8080/DatabaseService/DatabaseSynchronizationCoop?wsdl" uri="wsdl/192.168.43.2_8080/DatabaseService/DatabaseSynchronizationCoop.wsdl"/>
+    <system systemId="http://192.168.43.2:8080/DatabaseService/DatabaseSynchronizationCoop?xsd=1" uri="wsdl/192.168.43.2_8080/DatabaseService/DatabaseSynchronizationCoop.xsd_1.xsd"/>
+</catalog>

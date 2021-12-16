@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.3 (RELEASE-2.4.3-ad3323c; 2019-01-21T17:46:06+0000) JAXWS-RI/2.3.2 JAXWS-API/2.3.2 JAXB-RI/2.3.2 JAXB-API/2.3.2 git-revision#unknown. --><xs:schema xmlns:tns="http://service/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service/">
+
+<xs:element name="addToCartSyn" type="tns:addToCartSyn"/>
+
+<xs:element name="addToCartSynResponse" type="tns:addToCartSynResponse"/>
+
+<xs:element name="addUserSyn" type="tns:addUserSyn"/>
+
+<xs:element name="addUserSynResponse" type="tns:addUserSynResponse"/>
+
+<xs:element name="createTransactionSyn" type="tns:createTransactionSyn"/>
+
+<xs:element name="createTransactionSynResponse" type="tns:createTransactionSynResponse"/>
+
+<xs:element name="deleteCartSyn" type="tns:deleteCartSyn"/>
+
+<xs:element name="deleteCartSynResponse" type="tns:deleteCartSynResponse"/>
+
+<xs:element name="modifyUserCartSyn" type="tns:modifyUserCartSyn"/>
+
+<xs:element name="modifyUserCartSynResponse" type="tns:modifyUserCartSynResponse"/>
+
+<xs:element name="receiveItems" type="tns:receiveItems"/>
+
+<xs:element name="receiveItemsResponse" type="tns:receiveItemsResponse"/>
+
+<xs:element name="returnItemsSyn" type="tns:returnItemsSyn"/>
+
+<xs:element name="returnItemsSynResponse" type="tns:returnItemsSynResponse"/>
+
+<xs:element name="updateAddrSyn" type="tns:updateAddrSyn"/>
+
+<xs:element name="updateAddrSynResponse" type="tns:updateAddrSynResponse"/>
+
+<xs:element name="updateCardSyn" type="tns:updateCardSyn"/>
+
+<xs:element name="updateCardSynResponse" type="tns:updateCardSynResponse"/>
+
+<xs:element name="updateNameSyn" type="tns:updateNameSyn"/>
+
+<xs:element name="updateNameSynResponse" type="tns:updateNameSynResponse"/>
+
+<xs:element name="updatePasswdSyn" type="tns:updatePasswdSyn"/>
+
+<xs:element name="updatePasswdSynResponse" type="tns:updatePasswdSynResponse"/>
+
+<xs:complexType name="updateAddrSyn">
+<xs:sequence>
+<xs:element name="tel" type="xs:string" minOccurs="0"/>
+<xs:element name="addr" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateAddrSynResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updatePasswdSyn">
+<xs:sequence>
+<xs:element name="tel" type="xs:string" minOccurs="0"/>
+<xs:element name="passwd" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updatePasswdSynResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="modifyUserCartSyn">
+<xs:sequence>
+<xs:element name="tel" type="xs:string" minOccurs="0"/>
+<xs:element name="isbn" type="xs:string" minOccurs="0"/>
+<xs:element name="amount" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="modifyUserCartSynResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="receiveItems">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="receiveItemsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateCardSyn">
+<xs:sequence>
+<xs:element name="tel" type="xs:string" minOccurs="0"/>
+<xs:element name="card" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateCardSynResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addUserSyn">
+<xs:sequence>
+<xs:element name="tel" type="xs:string" minOccurs="0"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="passwd" type="xs:string" minOccurs="0"/>
+<xs:element name="cartd" type="xs:string" minOccurs="0"/>
+<xs:element name="addr" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addUserSynResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="returnItemsSyn">
+<xs:sequence>
+<xs:element name="tel" type="xs:string" minOccurs="0"/>
+<xs:element name="txnId" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="returnItemsSynResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createTransactionSyn">
+<xs:sequence>
+<xs:element name="tel" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createTransactionSynResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteCartSyn">
+<xs:sequence>
+<xs:element name="tel" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteCartSynResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateNameSyn">
+<xs:sequence>
+<xs:element name="tel" type="xs:string" minOccurs="0"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateNameSynResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addToCartSyn">
+<xs:sequence>
+<xs:element name="tel" type="xs:string" minOccurs="0"/>
+<xs:element name="isbn" type="xs:string" minOccurs="0"/>
+<xs:element name="amount" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addToCartSynResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
