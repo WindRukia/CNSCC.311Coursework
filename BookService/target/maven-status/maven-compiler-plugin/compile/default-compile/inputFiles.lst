@@ -1,0 +1,12 @@
+/Users/miracle/NetBeansProjects/BookService/src/main/java/com/mycompany/bookservice/resources/JavaEE8Resource.java
+/Users/miracle/NetBeansProjects/BookService/src/main/java/dao/impl/BookDaoImpl.java
+/Users/miracle/NetBeansProjects/BookService/src/main/java/util/JDBCUtil.java
+/Users/miracle/NetBeansProjects/BookService/src/main/java/service/impl/BookServiceImpl.java
+/Users/miracle/NetBeansProjects/BookService/src/main/java/vo/Book.java
+/Users/miracle/NetBeansProjects/BookService/src/main/java/po/Book.java
+/Users/miracle/NetBeansProjects/BookService/src/main/java/dao/BookDao.java
+/Users/miracle/NetBeansProjects/BookService/src/main/java/service/BookService.java
+/Users/miracle/NetBeansProjects/BookService/src/main/java/view/BookServlet.java
+/Users/miracle/NetBeansProjects/BookService/src/main/java/vo/BookList.java
+/Users/miracle/NetBeansProjects/BookService/src/main/java/vo/RespObj.java
+/Users/miracle/NetBeansProjects/BookService/src/main/java/com/mycompany/bookservice/JAXRSConfiguration.java
