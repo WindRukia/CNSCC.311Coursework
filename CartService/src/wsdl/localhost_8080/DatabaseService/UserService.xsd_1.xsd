@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.3 (RELEASE-2.4.3-ad3323c; 2019-01-21T17:46:06+0000) JAXWS-RI/2.3.2 JAXWS-API/2.3.2 JAXB-RI/2.3.2 JAXB-API/2.3.2 git-revision#unknown. --><xs:schema xmlns:tns="http://service/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service/">
+
+<xs:element name="addToCart" type="tns:addToCart"/>
+
+<xs:element name="addToCartResponse" type="tns:addToCartResponse"/>
+
+<xs:element name="addUser" type="tns:addUser"/>
+
+<xs:element name="addUserResponse" type="tns:addUserResponse"/>
+
+<xs:element name="createTransaction" type="tns:createTransaction"/>
+
+<xs:element name="createTransactionResponse" type="tns:createTransactionResponse"/>
+
+<xs:element name="deleteCart" type="tns:deleteCart"/>
+
+<xs:element name="deleteCartResponse" type="tns:deleteCartResponse"/>
+
+<xs:element name="login" type="tns:login"/>
+
+<xs:element name="loginResponse" type="tns:loginResponse"/>
+
+<xs:element name="modifyUserCart" type="tns:modifyUserCart"/>
+
+<xs:element name="modifyUserCartResponse" type="tns:modifyUserCartResponse"/>
+
+<xs:element name="returnItems" type="tns:returnItems"/>
+
+<xs:element name="returnItemsResponse" type="tns:returnItemsResponse"/>
+
+<xs:element name="searchUserAddrByTel" type="tns:searchUserAddrByTel"/>
+
+<xs:element name="searchUserAddrByTelResponse" type="tns:searchUserAddrByTelResponse"/>
+
+<xs:element name="searchUserCardByTel" type="tns:searchUserCardByTel"/>
+
+<xs:element name="searchUserCardByTelResponse" type="tns:searchUserCardByTelResponse"/>
+
+<xs:element name="searchUserCart" type="tns:searchUserCart"/>
+
+<xs:element name="searchUserCartResponse" type="tns:searchUserCartResponse"/>
+
+<xs:element name="searchUserNameByTel" type="tns:searchUserNameByTel"/>
+
+<xs:element name="searchUserNameByTelResponse" type="tns:searchUserNameByTelResponse"/>
+
+<xs:element name="updateAddress" type="tns:updateAddress"/>
+
+<xs:element name="updateAddressResponse" type="tns:updateAddressResponse"/>
+
+<xs:element name="updateCard" type="tns:updateCard"/>
+
+<xs:element name="updateCardResponse" type="tns:updateCardResponse"/>
+
+<xs:element name="updateName" type="tns:updateName"/>
+
+<xs:element name="updateNameResponse" type="tns:updateNameResponse"/>
+
+<xs:element name="updatePasswd" type="tns:updatePasswd"/>
+
+<xs:element name="updatePasswdResponse" type="tns:updatePasswdResponse"/>
+
+<xs:complexType name="modifyUserCart">
+<xs:sequence>
+<xs:element name="tel" type="xs:string" minOccurs="0"/>
+<xs:element name="isbn" type="xs:string" minOccurs="0"/>
+<xs:element name="amount" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="modifyUserCartResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addToCart">
+<xs:sequence>
+<xs:element name="tel" type="xs:string" minOccurs="0"/>
+<xs:element name="isbn" type="xs:string" minOccurs="0"/>
+<xs:element name="amount" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addToCartResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchUserCardByTel">
+<xs:sequence>
+<xs:element name="tel" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchUserCardByTelResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createTransaction">
+<xs:sequence>
+<xs:element name="tel" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createTransactionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="login">
+<xs:sequence>
+<xs:element name="tel" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updatePasswd">
+<xs:sequence>
+<xs:element name="tel" type="xs:string" minOccurs="0"/>
+<xs:element name="passwd" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updatePasswdResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchUserCart">
+<xs:sequence>
+<xs:element name="tel" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchUserCartResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateCard">
+<xs:sequence>
+<xs:element name="tel" type="xs:string" minOccurs="0"/>
+<xs:element name="cardNumber" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateCardResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateName">
+<xs:sequence>
+<xs:element name="tel" type="xs:string" minOccurs="0"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateNameResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteCart">
+<xs:sequence>
+<xs:element name="tel" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteCartResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="returnItems">
+<xs:sequence>
+<xs:element name="tel" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="returnItemsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchUserAddrByTel">
+<xs:sequence>
+<xs:element name="tel" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchUserAddrByTelResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchUserNameByTel">
+<xs:sequence>
+<xs:element name="tel" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchUserNameByTelResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateAddress">
+<xs:sequence>
+<xs:element name="tel" type="xs:string" minOccurs="0"/>
+<xs:element name="address" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateAddressResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addUser">
+<xs:sequence>
+<xs:element name="tel" type="xs:string" minOccurs="0"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="passwd" type="xs:string" minOccurs="0"/>
+<xs:element name="card" type="xs:string" minOccurs="0"/>
+<xs:element name="addr" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addUserResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
